@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --chart-text: #262626;        /* neutral-800 */
+    --chart-bg: #ffffff;          /* white */
+    --chart-crosshair: #9B7DFF;   /* purple */
+    --chart-border: #71649C;      /* purple-dark */
+  }
+}

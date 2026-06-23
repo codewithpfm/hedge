@@ -1,0 +1,41 @@
+[project]
+name = "trade-engine"
+version = "1.0.0"
+requires-python = ">=3.12"
+description = ""
+authors = [
+    { name = "pavittarx", email = "29155477+pavittarx@users.noreply.github.com" },
+]
+readme = "README.md"
+dependencies = [
+    "pandas>=2.2.2,<3",
+    "pyarrow>=16.0.0",
+    "pytz>=2024.1",
+    "feather-format>=0.4.1,<0.5",
+    "scikit-learn>=1.4.2,<2",
+    "scipy>=1.13.0,<2",
+    "kaleido==0.2.1",
+    "python-dotenv>=1.0.1,<2",
+    "ipywidgets>=8.1.2,<9",
+    "matplotlib>=3.9.0,<4",
+    "pandas-stubs>=2.2.2.240603,<3",
+    "pyarrow-stubs>=10.0.1.7,<11",
+    "pendulum>=3.0.0,<4",
+    "requests>=2.32.3,<3",
+    "notebook>=7.3.2,<8",
+    "ipykernel>=6.29.5,<7",
+    "quantstats>=0.0.77",
+    "metatrader5>=5.0.45; sys_platform == 'win32'",
+    "apscheduler>=3.10.0,<4",
+    "nautilus-trader>=1.225.0",
+]
+
+[dependency-groups]
+dev = ["ipykernel>=6.29.4,<7"]
+
+[tool.uv]
+package = false
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
